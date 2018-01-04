@@ -37,11 +37,11 @@ composer update
 ````
 
 ### Documentation
-Just navigate to the [LarAppOne Official Documentation](http://app.thedevproject.info/docs/project)
+Just navigate to the [LarAppOne Official Documentation](http://app.thedevproject.info/docs/project).
 
 ## Built With
 
-* [Full Stack](http://app.thedevproject.info/docs/stack) - All the packages used in the project
+* [Full Stack](http://app.thedevproject.info/docs/stack) - All packages used in the project
 
 ## Author
 
