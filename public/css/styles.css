@@ -1,0 +1,288 @@
+textarea {
+    resize: none;
+}
+
+th, td {
+	vertical-align: top;
+	padding-top: 0%; 
+}
+tr.collapse.in {
+    display:table-row;
+  }
+  /* .collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height 3s ease;
+         -o-transition: height 3s ease;
+            transition: height 3s ease;
+  } */
+
+/* td.details-control:before {
+	font-family: "Glyphicons Halflings";
+	content:"\2b";
+	color:#1d6db0;
+    cursor: pointer;
+}
+tr.shown td.details-control:before {
+	 font-family: "Glyphicons Halflings";
+	 content:"\2212";
+	 color: #dc4243;
+} */
+
+
+.panel-footer {
+    padding: 10px 15px;
+    background-color: #fff;
+    border-top: 1px solid #d3e0e9;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  
+.product-list {
+    display:inline;
+}
+
+
+.bootstrap-timepicker {
+    min-width: 100%;
+  }
+  
+/* The navigation bar */
+/* .navbar { */
+    /* overflow: hidden; */
+    /* background-color: #333; */
+    /*  position: fixed; /* Set the navbar to fixed position */
+    /* top: 0; /* Position the navbar at the top of the page */
+	/* width: 100%; /* Full width */
+	/* z-index: 1000;
+}
+
+/* Links inside the navbar */
+/* .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+} */
+
+/* Main content */
+/* .main {
+    margin-top: 40px; /* Add a top margin to avoid content overlay */
+/* } */ 
+
+.clickable{
+    cursor: pointer;   
+}
+.panel-heading span {
+	margin-top: -20px;
+	font-size: 15px;
+}
+.panel-heading a.collapsed:after {
+    content:"\e080";
+}
+.table-header-text{
+    vertical-align: middle;
+    padding: 5px;
+}
+.table-header-text-comment{
+    vertical-align: middle;
+    padding: 5px;
+    width: 10%;
+}
+.table-header-sort-icon-up{    
+    vertical-align: bottom;
+    font-size: .5em;
+}
+.table-header-sort-icon-down{    
+    vertical-align: top;
+    font-size: .5em;
+}
+
+.table-td-comments {
+    max-width: 150px;
+}
+.table-td-comments span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: 100%;
+}
+.table-products{
+    border-radius: 5px;
+    width: 50%;
+    margin: 0px auto;
+    float: none;
+}
+.table-products-icon {
+    cursor: pointer;
+    color:#3a80a7;
+    padding: 4px
+}
+.table-number-header {
+    font-weight: bold;
+    text-align: right
+}
+.table-number-body {
+    text-align: right
+}
+.table-number-footer {
+    font-weight: bold;
+    text-align: right
+}
+.table-text-footer {
+    font-weight: bold;
+}
+.menu icon{
+    cursor: pointer;
+}
+
+.control-menu-panel-outer{
+    margin-left: 7px;
+    margin-right: 5px;
+}
+.control-menu-panel-inner{
+    margin-left: 7px;
+    margin-right: 7px;
+}
+.control-menu-button{
+    text-align: center;
+    margin-top: 12px;
+}
+/* CHARTIST */
+/* .ct-area {
+    stroke:none;
+    fill-opacity: 1; } */
+/* Set the colour of this series line */
+/* .ct-series-a .ct-line {
+
+    stroke:#94c1ef;
+    stroke-width: 10px;
+} */
+/* Set the colour of this series line */
+/* .ct-series-b .ct-line {
+    stroke:#505b6b;
+    stroke-width: 10px;
+}
+.ct-series-a .ct-area, .ct-series-a .ct-point {
+    stroke: #94c1ef;
+}
+.ct-series-b .ct-area, .ct-series-b .ct-point {
+    stroke:#505b6b;
+}
+.ct-series-a .ct-slice-pie, .ct-series-a .ct-slice-donut-solid, .ct-series-a .ct-area {
+    fill: #94c1ef; 
+}
+.ct-series-b .ct-slice-pie, .ct-series-b .ct-slice-donut-solid, .ct-series-b .ct-area {
+    fill: #505b6b; 
+}
+.chartist-tooltip {
+    background: #4289b8;
+    color: #FFF;
+}
+.chartist-tooltip:before {
+    border-top-color: #4289b8; 
+}
+.chartist-tooltip.tooltip-show {
+    opacity: .8;
+} */
+
+
+/* Previous/Next buttions, edit form 
+http://blog.koalite.com/bbg/ */
+.btn-records { 
+    color: #337AB7; 
+    background-color: #FFFFFF; 
+    border-color: #337AB7; 
+  } 
+  .btn-records:hover, 
+  .btn-records:focus, 
+  .btn-records:active, 
+  .btn-records.active, 
+  .open .dropdown-toggle.btn-records { 
+    color: #337AB7; 
+    background-color: #EDEDED; 
+    border-color: #337AB7; 
+  } 
+  .btn-records:active, 
+  .btn-records.active, 
+  .open .dropdown-toggle.btn-records { 
+    background-image: none; 
+  } 
+  .btn-records.disabled, 
+  .btn-records[disabled], 
+  fieldset[disabled] .btn-records, 
+  .btn-records.disabled:hover, 
+  .btn-records[disabled]:hover, 
+  fieldset[disabled] .btn-records:hover, 
+  .btn-records.disabled:focus, 
+  .btn-records[disabled]:focus, 
+  fieldset[disabled] .btn-records:focus, 
+  .btn-records.disabled:active, 
+  .btn-records[disabled]:active, 
+  fieldset[disabled] .btn-records:active, 
+  .btn-records.disabled.active, 
+  .btn-records[disabled].active, 
+  fieldset[disabled] .btn-records.active { 
+    background-color: #FFFFFF; 
+    border-color: #337AB7; 
+  } 
+  .btn-records .badge { 
+    color: #FFFFFF; 
+    background-color: #337AB7; 
+  }
+/* end previous/next buttons */
+
+/* DASHBOARD INFO BOX */
+.info-box-text {
+    text-transform: none;
+  }
+
+/* FORM EDIT - PRODUCTS */
+
+  .btn-add{
+      color: lime;
+    }
+  .btn-delete{
+    color: #d84132;
+    }
+  
+    /*  TO AVOID the title overlapping the "new..." link when in mobile view */
+    .box-title.shorter{
+        width: 80%;
+    }
+
+     /*  Add and edit forms */
+    .card-temperature{
+        border: 1px solid #ccd0d9; 
+        margin-left: 25px;
+        margin-right: 0px;
+        /* padding-right: 0px; */
+        /* border-color: #545454 */
+    }
+
+    .cart-title{
+        font-size: 18px; 
+        color: #444;
+    }
+    .not-allowed {
+        pointer-events: not-allowed;
+        pointer-events: all !important;
+      }
+    .package-bold{
+        font-weight: bold;
+    }
+    .side-bar-icon{
+        color:rgb(137, 166, 194)
+    }
+    .doc-link{
+        font-weight: bold;
+    }
+    .msg-red{
+        font-weight: bold;
+        color: #3a80a7;
+    }    
