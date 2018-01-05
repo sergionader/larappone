@@ -50,6 +50,20 @@ Larapone uses Elasticsearch's default port. Your /config/scout.php file should s
     ],
 ````
 
+The Elasticsearch driver used in the project does not create the index automacally, so we have to do so: 
+````
+curl -XPUT 'localhost:9200/larappone?pretty' -H 'Content-Type: application/json' -d'
+{
+    "settings" : {
+        "index" : {
+            "number_of_shards" : 3, 
+            "number_of_replicas" : 2 
+        }
+    }
+}'
+`````
+
+
 ### Adding records automatically each X minutes
 
 If you are using a Linux or a Mac computer, run the following: 
