@@ -1,9 +1,5 @@
-vendor/
-node_modules/
-npm-debug.log
 
 
-# Laravel 5 & Lumen specific
 public/storage
 public/hot
 storage/*.key
@@ -15,6 +11,9 @@ Homestead.json
 /composer.lock
 *.zip
 
-
+/vendor/*
+/composer.lock
+/node_modules
+npm-debug.log
 # Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
 .rocketeer/
