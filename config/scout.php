@@ -14,8 +14,13 @@ return [
     |
     */
 
-    'driver' => env('SCOUT_DRIVER', 'elasticsearch'),
+    /*
+    |--------------------------------------------------------------------------
+    | Elasstic Search
+    |--------
+    */
 
+    'driver' => env('SCOUT_DRIVER', 'elasticsearch'),
     'elasticsearch' => [
         'index' => env('ELASTICSEARCH_INDEX', 'larappone'),
         'hosts' => [

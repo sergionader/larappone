@@ -220,39 +220,6 @@ class DbController extends Controller
         return $visits;
     }
 
-    public function test()
-    {
-        $visits = Visit::orderBy('id', 'desc')->with(['type', 'profile', 'user'])->take(10)->get();
-        dump($visits);
-        dump('***************************************');
-        dump('***************************************');
-        $test = Visit::orderBy('id', 'desc')
-        ->with(['type' => function ($query) {
-            $query->select('id', 'name');
-        }])
-        ->with(['profile' => function ($query) {
-            $query->select('id', 'name');
-        }])
-        ->with(['user' => function ($query) {
-            $query->select('id', 'name', 'email');
-        }])
-        ->take(2)->get();
-        // ->get(['id', 'profile_id', 'origin_id', 'user_id',  'unit', 'dt', 'tm', 'avg', 'max', 'max', 'prec', 'comment']);
-        dd($test);
-        return $test;
-    }
-
-    /**
-     * For testing the datable performance
-     *
-     * @return void
-     */
-    public function getUsers()
-    {
-        $users = User::orderBy('id')->get();
-        return datatables()->of($users)->toJson();
-    }
-
     public function randomTime()
     {
         $random_hour = rand(9, 18);
@@ -289,7 +256,7 @@ class DbController extends Controller
         Artisan::call('scout:flush');
         $sql_users = DB::insert(
             "INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-            (1, 'Admin', 'admin@example.org', '$2y$10$.ZnA3NvK9CN8P64wjSAMPuiZAY7ePjh95x82cEDrI7GOwmqK8AyGm', 'iJZDmNmvR2bAmqVvcWSacJJzvJwZsgLLs8t1NXm6FLSOK7QS3cUByrJiqd0D', '2017-11-02 16:20:20', '2017-11-02 16:20:20'),
+            (1, 'Admin', 'admin@example.org', '$2y$10$.ZnA3NvK9CN8P64wjSAMPuiZAY7ePjh95x82cEDrI7GOwmqK8AyGm', NULL, '2017-11-02 16:20:20', '2017-11-02 16:20:20'),
             (2, 'John', 'user1@example.org', '$2y$10$.ZnA3NvK9CN8P64wjSAMPuiZAY7ePjh95x82cEDrI7GOwmqK8AyGm', NULL, '2017-11-02 16:20:52', '2017-11-02 16:20:52'),
             (3, 'Mary', 'user2@example.org', '$2y$10$.ZnA3NvK9CN8P64wjSAMPuiZAY7ePjh95x82cEDrI7GOwmqK8AyGm', NULL, '2017-11-02 16:20:52', '2017-11-02 16:20:52'),
             (4, 'Peter', 'user3@example.org', '$2y$10$.ZnA3NvK9CN8P64wjSAMPuiZAY7ePjh95x82cEDrI7GOwmqK8AyGm', NULL, '2017-11-02 16:20:52', '2017-11-02 16:20:52');"
