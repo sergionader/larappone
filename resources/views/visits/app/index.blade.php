@@ -7,7 +7,7 @@
                 <!-- Main box -->
                 <div class="box-header with-border">
                     <h3 class="box-title shorter">List, Search, Edit, Delete & Add:  showing <b>{{1+(10 * ((!$page ? 1 : $page)-1))}} to {{ (10 * (!$page ? 1 : $page))>
-                        $records_shown ? $records_shown : (10 * (!$page? 1 : $page))}} of {{$records_shown}} records</b></h3>
+                        $records_shown ? number_format($records_shown) : number_format((10 * (!$page? 1 : $page)))}} of {{number_format($records_shown)}} records</b></h3>
                     <div class="box-tools pull-right">
                         <div class="btn-group" role="group">
                             <a href="{{route('app.create')}}" class="btn btn-outline-primary" type="button">Add...</a>
