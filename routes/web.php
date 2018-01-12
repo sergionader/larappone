@@ -12,6 +12,11 @@ Route::get('/stack', [
     'as' => 'stack'
 ]);
 
+Route::get('/users', [
+    'uses' => 'UserController@index',
+    'as' => 'users'
+]);
+
 Route::post('/bitbucket', [
     'uses' => 'BitBucketController@index',
     'as' => 'bitbucket'
@@ -301,10 +306,10 @@ Route::get('/datatables.visits', [
     'as' => 'datatables.visits'
 ]);
 
-Route::get('/serverSide', [
-    'uses' => 'ProductVisitWeb@getUsers',
-    'as' => 'serverSide'
-]);
+// Route::get('/serverSide', [
+//     'uses' => 'ProductVisitWeb@getUsers',
+//     'as' => 'serverSide'
+// ]);
 
 Route::group(['prefix' => 'api/v1/'], function () {
     Route::resource('visit', 'ProductVisitApi');

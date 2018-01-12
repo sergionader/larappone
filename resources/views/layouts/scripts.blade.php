@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="{{ URL::to('/vendor/font-awesome/css/font-awesome.min.css') }}">
     
     <!-- ADMIN LTE ELEMENTS -->    
-    <link rel="stylesheet" href="{{ URL::to('/vendor/adminlte/css/AdminLTE.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::to('/vendor/adminlte/css/AdminLTE.css') }}">
     
     <!-- GOOGLE FONTS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">

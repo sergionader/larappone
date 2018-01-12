@@ -18,7 +18,7 @@
         <div class="row">
             <!-- <div class="col-md-2 text-center"> -->
             <div class="col-md-2 col-sm-6 col-xs-12">
-                <div class="info-box">
+                <!-- <div class="info-box">
                     <span class="info-box-icon bg-aqua">
                         <i class="fa fa-users"></i>
                     </span>            
@@ -26,58 +26,114 @@
                         <span class="info-box-text">Visits</span>
                         <span class="info-box-number" id="visits"></span>
                     </div>
+                </div> -->
+                <div class="small-box bg-aqua">
+                    <div class="inner">
+                      <h3 id="visits"></h3>
+                      <p>Visits</p>
+                    </div>
+                    <div class="icon">
+                      <i class="fa fa-users"></i>
+                    </div>
                 </div>
             </div>
             <!-- <div class="col-md-2 text-center"> -->
             <div class="col-md-2 col-sm-6 col-xs-12">
                     
-                <div class="info-box">
+                <!-- <div class="info-box">
                     <span class="info-box-icon bg-blue"><i class="ion ion-bag"></i></span>            
                     <div class="info-box-content">
                         <span class="info-box-text">Sales Today</span>
                         <span class="info-box-number" id="sales"></span>
                     </div>
+                </div> -->
+                <div class="small-box bg-green">
+                    <div class="inner">
+                      <h3 id="sales"></h3>
+                      <p>Sales Today</p>
+                    </div>
+                    <div class="icon">
+                      <i class="ion ion-bag"></i>
+                    </div>
                 </div>
             </div>
             <!-- <div class="col-md-2 text-center"> -->
             <div class="col-md-2 col-sm-6 col-xs-12">                
-                <div class="info-box">
+                <!-- <div class="info-box">
                     <span class="info-box-icon bg-teal"><i class="ion ion-social-usd"></i></span>            
                     <div class="info-box-content">
                         <span class="info-box-text">Conversion %</span>
                         <span class="info-box-number" id="rate"></span>
                     </div>
+                </div> -->
+                <div class="small-box bg-teal">
+                    <div class="inner">
+                      <h3 id="rate"></h3>
+                      <p>Conversion %</p>
+                    </div>
+                    <div class="icon">
+                      <i class="ion ion-social-usd"></i>
+                    </div>
                 </div>
             </div>
             <!-- <div class="col-md-2 text-center"> -->
             <div class="col-md-2 col-sm-6 col-xs-12">
                     
-                <div class="info-box">
+                <!-- <div class="info-box">
                     <span class="info-box-icon bg-light-blue"><i class="fa fa-calendar"></i></span>            
                     <div class="info-box-content">
                         <span class="info-box-text">This Month %</span>
                         <span class="info-box-number" id="thismonthrate"></span>
                     </div>
+                </div> -->
+                <div class="small-box bg-blue">
+                    <div class="inner">
+                      <h3 id="thismonthrate"></h3>
+                      <p>This Month %</p>
+                    </div>
+                    <div class="icon">
+                      <i class="fa fa-calendar"></i>
+                    </div>
                 </div>
             </div>
             <!-- <div class="col-md-2 text-center"> -->
             <div class="col-md-2 col-sm-6 col-xs-12">
                     
-                <div class="info-box">
+                <!-- <div class="info-box">
                     <span class="info-box-icon bg-orange"><i class="fa fa-calendar-minus-o"></i></span>            
                     <div class="info-box-content">
                         <span class="info-box-text">Last Month %</span>
                         <span class="info-box-number" id="lastmonthrate"></span>
                     </div>
+                </div> -->
+                <div class="small-box bg-orange">
+                    <div class="inner">
+                      <h3 id="lastmonthrate"></h3>
+                      <p>This Mo Lst Yr %</p>
+                    </div>
+                    <div class="icon">
+                      <i class="fa fa-calendar-minus-o"></i>
+                    </div>
                 </div>
-            </div>        
+            </div>
+            
+
             <!-- <div class="col-md-2 text-center"> -->
             <div class="col-md-2 col-sm-6 col-xs-12">                
-                <div class="info-box">
+                <!-- <div class="info-box">
                     <span class="info-box-icon bg-yellow"><i class="ion ion-calendar"></i></span>            
                     <div class="info-box-content">
                         <span class="info-box-text">This Mo Lst Yr %</span>
                         <span class="info-box-number" id="thismonthlastyearrate"></span>
+                    </div>
+                </div> -->
+                <div class="small-box bg-yellow">
+                    <div class="inner">
+                      <h3 id="thismonthlastyearrate"></h3>
+                      <p>This Mo Lst Yr %</p>
+                    </div>
+                    <div class="icon">
+                      <i class="ion ion-calendar"></i>
                     </div>
                 </div>
             </div>           

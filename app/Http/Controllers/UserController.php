@@ -55,7 +55,7 @@ class UserController extends Controller
             'sort_column' => $sort_column,
             'sort_az_za' => $sort_az_za,
         ]);
-        return view('return_route', [
+        return view($return_route, [
             'result' => $record_set,
             'aliases' => $aliases,
             'title' => $title
