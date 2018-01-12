@@ -27,12 +27,12 @@
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body">
-                    <i class="fa fa-book margin-r-5"></i> <strong></strong>Github</strong>
+                    <i class="fa fa-github margin-r-5"></i> <strong>Github</strong>
                     <p class="text-muted">
                        <a href="https://github.com/sergionader/">https://github.com/sergionader/</a>
                     </p>
                     <hr>
-                    <i class="fa fa-book margin-r-5"></i> <strong></strong>Education</strong>
+                    <i class="fa fa-book margin-r-5"></i> <strong>Education</strong>
                     <p class="text-muted">
                         B.S. in Business Administration from Faculdades Anhembi Morumbi at São Paulo, Brazil.
                     </p>
