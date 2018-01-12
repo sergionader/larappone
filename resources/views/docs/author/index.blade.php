@@ -27,16 +27,20 @@
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body">
-                    <strong>
-                        <i class="fa fa-book margin-r-5"></i> Education</strong>
+                    <i class="fa fa-book margin-r-5"></i> <strong></strong>Github</strong>
                     <p class="text-muted">
-                        B.S. in Business Adminstration from Faculdades Anhembi Morumbi at São Paulo, Brazil.
+                       <a href="https://github.com/sergionader/">https://github.com/sergionader/</a>
                     </p>
-                    <hr <strong>
-                    <i class="fa fa-map-marker margin-r-5"></i> Location</strong>
+                    <hr>
+                    <i class="fa fa-book margin-r-5"></i> <strong></strong>Education</strong>
+                    <p class="text-muted">
+                        B.S. in Business Administration from Faculdades Anhembi Morumbi at São Paulo, Brazil.
+                    </p>
+                    <hr>
+                    <i class="fa fa-map-marker margin-r-5"></i> <strong>Location</strong>
                     <p class="text-muted">Orlando, Florida, US</p>
                     <hr>
-                    <strong><i class="fa fa-pencil margin-r-5"></i> Skills</strong>
+                   <i class="fa fa-pencil margin-r-5"></i>  <strong>Skills</strong>
                     <p>
                         <span class="label label-warning">AWS</span>
                         <span class="label label-success">Elasticsearch</span>
@@ -54,6 +58,7 @@
                         <span class="label label-success">ORM</span>
                         <span class="label label-warning">PHP</span>
                         <span class="label label-primary">PostgreSQL</span>
+                        <span class="label label-primary">Streaming</span>
                         <span class="label label-info">WordPress</span>
                     </p>
                     <hr>
