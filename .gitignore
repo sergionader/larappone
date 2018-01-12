@@ -17,3 +17,5 @@ Homestead.json
 npm-debug.log
 # Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
 .rocketeer/
+
+resources/assets/sql
