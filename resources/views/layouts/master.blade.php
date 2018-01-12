@@ -1,8 +1,9 @@
 @extends('layouts.scripts') 
 <!DOCTYPE html>
 <html lang="en">            
-@section('htmlheader')
+
 @include('dashboard.partials.htmlheader')
+@section('htmlheader')
 @show
 <body class="skin-black fixed">
     <!-- <div id="ap" v-cloak> -->

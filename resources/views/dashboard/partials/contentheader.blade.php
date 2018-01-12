@@ -1,17 +1,7 @@
 <!-- Content Header (Page header) -->
 <section class="content-header">
-        <!-- @@if(!Auth::user() && !str_contains(url()->current(), "docs"))  -->
-        <!-- "{{route('login')}}" -->
-        <!-- <div class="alert alert-warning alert-dismissible">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-            <h4><i class="icon fa fa-warning"></i> Just one more step...</h4>
-                <p>You must be logged in to use the app. </p>
-                <p>Click to <a href="{{route('login')}}">login</a>.  </p>
-                <p><span class="msg-red">Access data: user1@example.org/test1234</span></p>
-                <p>I prefer to see the <a href="{{route('docs.project.index')}}">documentation</a>. </p>
-        </div> -->
-        <!-- @@endif -->
-
+        Visits Table: {{number_format(App\Visit::count()) }} |
+        Products Table: {{number_format(App\ProductVisit::count()) }}
     @if(Session::has('info-success'))
         <div class="alert alert-success alert-dismissible">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>

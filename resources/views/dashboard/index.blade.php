@@ -4,9 +4,9 @@
 @include('dashboard.partials.upperboxes')
 
 <!-- HighCharts  -->   
-<script src="{{URL::to('vendor/highchart/js/highcharts.src.js')}}"></script>
+<!-- <script src="{{URL::to('vendor/highchart/js/highcharts.src.js')}}"></script> -->
 <!-- Google Charts  Maps -->
-<script src="https://www.gstatic.com/charts/loader.js"></script>
+<!-- <script src="https://www.gstatic.com/charts/loader.js"></script> -->
 <div class="main">
 @if(Session::has("fail"))
     <div class = "alert alert-danger">
