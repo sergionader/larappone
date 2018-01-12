@@ -14,22 +14,15 @@
         <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
           <span class="sr-only">Toggle navigation</span>
         </a>
-        
         <!-- Navbar Right Menu -->
-      
-   
-          <!-- <ul class="nav navbar-nav navbar-right"> -->
-              
           <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
-              <!-- Authentication Links -->
-              
-              <!-- <li><a >Here</a></li> -->
-              <li><a>
-              <b>Records:</b> Visits Table: {{number_format(App\Visit::count()) }} |
-              Products Table: {{number_format(App\ProductVisit::count()) }}</a>
-            </li>
+              <!-- <li>
+                <a>
+                <b>Records:</b> </a>
+            </li> -->
               <li><a href="http://thedevproject.info/site/?page_id=145">Blog</a></li>
+              <!-- Authentication Links -->
      
               @if (Auth::guest())
                 <li><a href="{{ route('login') }}">Login</a></li>
