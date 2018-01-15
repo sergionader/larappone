@@ -1,6 +1,6 @@
 <!-- Content Header (Page header) -->
 <section class="content-header">
-        Visits Table: {{number_format(App\Visit::count()) }} |
+        <strong>Records: </strong>Visits Table: {{number_format(App\Visit::count()) }} |
         Products Table: {{number_format(App\ProductVisit::count()) }}
     @if(Session::has('info-success'))
         <div class="alert alert-success alert-dismissible">
