@@ -29,7 +29,11 @@
                 <div class="box-body">
                     <i class="fa fa-github margin-r-5"></i> <strong>Github</strong>
                     <p class="text-muted">
-                       <a href="https://github.com/sergionader/">https://github.com/sergionader/</a>
+                       <a href="https://github.com/sergionader" target="_blank">https://github.com/sergionader/</a>
+                    </p>
+                    <i class="fa fa-twitter margin-r-5"></i> <strong>Twitter</strong>
+                    <p class="text-muted">
+                        <a href="https://twitter.com/nadersergio/" target="_blank">https://twitter.com/nadersergio</a>
                     </p>
                     <hr>
                     <i class="fa fa-book margin-r-5"></i> <strong>Education</strong>
