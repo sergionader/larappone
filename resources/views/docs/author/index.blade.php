@@ -27,14 +27,10 @@
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body">
-                    <i class="fa fa-github margin-r-5"></i> <strong>Github</strong>
-                    <p class="text-muted">
-                       <a href="https://github.com/sergionader" target="_blank">https://github.com/sergionader/</a>
-                    </p>
-                    <i class="fa fa-twitter margin-r-5"></i> <strong>Twitter</strong>
-                    <p class="text-muted">
-                        <a href="https://twitter.com/nadersergio/" target="_blank">https://twitter.com/nadersergio</a>
-                    </p>
+                    <i class="fa fa-github margin-r-5"></i> <strong><a href="https://github.com/sergionader" target="_blank">Github</a></strong>
+<br>
+                    <i class="fa fa-twitter margin-r-5"></i> <strong><a href="https://twitter.com/nadersergio/" target="_blank">Twitter</a></strong>
+
                     <hr>
                     <i class="fa fa-book margin-r-5"></i> <strong>Education</strong>
                     <p class="text-muted">
