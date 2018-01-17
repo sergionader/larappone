@@ -21,7 +21,7 @@
                 <a>
                 <b>Records:</b> </a>
             </li> -->
-              <li><a href="http://thedevproject.info/site/?page_id=145">Blog</a></li>
+              <li><a href="http://thedevproject.info/site/blog/" target="_blank">Blog</a></li>
               <!-- Authentication Links -->
      
               @if (Auth::guest())
