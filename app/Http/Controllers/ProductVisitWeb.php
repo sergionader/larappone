@@ -146,9 +146,9 @@ class ProductVisitWeb extends Controller
             'sort_az_za' => $sort_az_za,
         ]);
         $page = Input::get('page');
-        DB::listen(function ($visits) {
-            Log::info('SQL query: | ' . json_encode($visits));
-        });
+        // DB::listen(function ($visits) {
+        //     Log::info('SQL query: | ' . json_encode($visits));
+        // });
         // Log::info('json_encode($visits) | ' . json_encode($visits));
         return view('visits.app.index', [
             'visits' => $visits,
@@ -407,25 +407,14 @@ class ProductVisitWeb extends Controller
         if (!$visit = Visit::find($visit_id)) {
             return redirect()->route('app.index')->with('info-danger', 'ID not found.');
         }
-        // to know if this is new
-        // if the comes for the new url, then it's new
-        // if (preg_match('/new/',request()->headers->get('referer'))){
-        //     $isnew = ['value', 1];
-        // }
-        $newRecord = 3; // each 3 elements of the $productsArray we have a new record.
+
+        $newRecord = 3; // for each 3 elements of the $productsArray we have a new record.
         $productsArray = [$request->input('products')];
         $countProductsArray = count($productsArray, COUNT_RECURSIVE) - 2;
 
         // ************************
-        // **** UPDATE THE VISIT ****
+        // **** UPDATE THE VISIT **
         // ************************
-        // We need all of the bellow arrays to the edit page when we reload it.
-        // $profiles   = Profile::orderBy('name')->get();
-        // $thisProfile= Origin::find($visit->profile_id);
-        // $origins     = Origin::orderBy('name')->get();
-        // $thisOrigin  = Origin::find($visit->origin_id);
-        // $productList= Product::orderBy('name')->get();
-        // update the visit model
         $dt = date('Y-m-d', strtotime($request->input('dt')));
         $tm = date('H:i:s', strtotime($request->input('tm')));
         $dt_trim = trim($request->input('dt'));
@@ -437,7 +426,7 @@ class ProductVisitWeb extends Controller
                 'month_year' => $month_year,
                 'tm' => $tm,
                 'tm_unix' => strtotime($tm),
-                'profile_id' > $request->input('profile_id'),
+                'profile_id' => $request->input('profile_id'),
                 'origin_id' => $request->input('origin_id'),
                 'avg' => $request->input('avg'),
                 'max' => $request->input('max'),
@@ -481,13 +470,6 @@ class ProductVisitWeb extends Controller
 
         return redirect()->route('app.edit', ['id' => $visit_id])->with('info-success', 'Data updated!');
     }
-
-    // public function origin()
-    // {
-    //     $v = Visit::with('profile')->take(10)->get();
-
-    //     // dump(($v->toArray()));
-    // }
 
     /**
      * Remove the specified resource from storage.

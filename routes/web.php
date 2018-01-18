@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [
-    // 'middleware' => ['auth'],
+    'middleware' => ['auth'],
     'uses' => 'HomeController@dashboardHome',
     'as' => 'app.dashboard'
 ]);
