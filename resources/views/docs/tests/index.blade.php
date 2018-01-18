@@ -28,7 +28,7 @@
                         <br>The test scripts can be found at this
                         <a href="https://www.getpostman.com/collections/0785ce129b2a49ca61bb" target="_blank">Postman collection</a> (search for "tests").
                         <br>Make sure to check the
-                        <a href="https://documenter.getpostman.com/view/1542077/laravel_productvisit/6taa4ws" target="_blank">API Documentation</a>
+                        <a href="https://documenter.getpostman.com/view/1542077/larappone/7LkfiLX" target="_blank">API Documentation</a>
                         <pre><code class="default hljs">
                     newman
                     
