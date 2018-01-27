@@ -13,12 +13,19 @@ class UserController extends Controller
         $return_route = 'visits.app.users.index';
         $sort_column = "$table_name.id";
         $sort_az_za = 'asc';
+        $page_size = 10;
+        $route = 'users';
         if ($_REQUEST) {
             $sort_column = (string)($_REQUEST['sort_column']);
             $sort_az_za = (string)($_REQUEST['sort_az_za']);
+            $page_size = (string)($_REQUEST['page_size']);
         };
         $columns = [
-                "$table_name.id as id", "$table_name.name as name", "$table_name.email", "$table_name.created_at", "$table_name.updated_at"
+                "$table_name.id as id",
+                "$table_name.name as name",
+                "$table_name.email",
+                "$table_name.created_at",
+                "$table_name.updated_at"
             ];
         $aliases = [
                 [
@@ -27,7 +34,7 @@ class UserController extends Controller
                     'sort' => 1
                 ],
                 [
-                    'name' => 'name',
+                    'name' => 'Name',
                     'field' => 'name',
                     'sort' => 1
                 ],
@@ -50,15 +57,18 @@ class UserController extends Controller
         $record_set = DB::table($table_name)
         ->orderby($sort_column, $sort_az_za)
         ->select($columns)
-        ->paginate(10);
+        ->paginate($page_size);
         $record_set->appends([
             'sort_column' => $sort_column,
             'sort_az_za' => $sort_az_za,
+            'page_size' => $page_size,
         ]);
         return view($return_route, [
             'result' => $record_set,
             'aliases' => $aliases,
-            'title' => $title
+            'title' => $title,
+            'route' => $route,
+            'page_size' => $page_size,
         ]);
     }
 }
