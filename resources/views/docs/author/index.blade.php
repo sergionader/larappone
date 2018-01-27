@@ -28,7 +28,9 @@
                 <!-- /.box-header -->
                 <div class="box-body">
                     <i class="fa fa-github margin-r-5"></i> <strong><a href="https://github.com/sergionader" target="_blank">Github</a></strong>
-<br>
+                    <br>
+                    <i class="fa fa-linkedin margin-r-5"></i> <strong><a href="https://www.linkedin.com/in/sergionader/" target="_blank">LinkedIn</a></strong>
+                    <br>
                     <i class="fa fa-twitter margin-r-5"></i> <strong><a href="https://twitter.com/nadersergio/" target="_blank">Twitter</a></strong>
 
                     <hr>
